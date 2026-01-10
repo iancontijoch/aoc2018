@@ -12,13 +12,11 @@ INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
 def compute(s: str) -> int:
     lines = s.splitlines()
-    total = 0
-    for line in lines:
-        nums_s = line.split(', ')
-        for n_s in nums_s:
-            sign = 1 if n_s[0] == '+' else -1
-            total += sign * int(n_s[1:])
-    return total
+    return sum(
+        int(n_s)
+        for line in lines
+        for n_s in line.split(', ')
+    )
 
 
 INPUT_S = '''\
