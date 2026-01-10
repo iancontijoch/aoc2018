@@ -6,3 +6,8 @@ That's not the right answer; your answer is too low.
 > 2895 ms
 answer: 116140
 That's the right answer!
+
+
+> 5804 ms
+answer: 574
+That's the right answer!
